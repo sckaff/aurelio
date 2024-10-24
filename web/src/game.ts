@@ -1,14 +1,14 @@
-import { Vector } from "./vector.js";  // Assuming the Vector class is in vector.ts
+import { Vector } from "./vector.js";
 
 export class Game {
     private ctx: CanvasRenderingContext2D;
     private tileImage: HTMLImageElement;
-    private tileSize: Vector;  // Vector to represent the tile's width and height
-    private hexOffset: number;  // Offset between rows for staggered layout
-    private hexWidth: number;  // Width of the hexagon in pixels
-    private hexHeight: number;  // Height of the hexagon in pixels
-    private cols: number;  // Number of columns
-    private rows: number;  // Number of rows
+    private tileSize: Vector;
+    private hexOffset: number;
+    private hexWidth: number;
+    private hexHeight: number;
+    private cols: number;
+    private rows: number;
 
     constructor(ctx: CanvasRenderingContext2D) {
         this.ctx = ctx;
@@ -30,6 +30,9 @@ export class Game {
             // Start the game after the image is loaded
             this.run();
         };
+
+        // Change the background color of the canvas
+        this.setBackgroundColor("#0e1113");
     }
 
     public run() {
@@ -58,6 +61,10 @@ export class Game {
 
         // Continue the rendering loop
         requestAnimationFrame(() => this.render());
+    }
+
+    private setBackgroundColor(color: string) {
+        this.ctx.canvas.style.backgroundColor = color;
     }
 
     // Function to convert hex coordinates to pixel coordinates
