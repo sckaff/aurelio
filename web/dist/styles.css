@@ -1,0 +1,11 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;  /* Ensure body and html take full height */
+}
+
+canvas {
+    display: block;  /* Remove extra space below canvas (if any) */
+    width: 100vw;    /* Make the canvas span the full viewport width */
+    height: 100vh;   /* Make the canvas span the full viewport height */
+}
