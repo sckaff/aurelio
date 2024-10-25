@@ -9,22 +9,19 @@ Aurelio is a **single-player, web-based turn-based game** built with **TypeScrip
 - **Single-Player**: Designed for solo play, focusing on strategic decision-making.
 - **Web-Based**: The game can be played directly from a browser.
 
-## Project Structure [must update]
+## Project Structure
 
 ```text
 aurelio/
 │
-├── src/                # TypeScript source files
-│   ├── game.ts         # Main game logic
-│   └── ui.ts           # UI handling
+├── web/
+│   └── src/
+│       ├── game.ts         # Main game logic
+│       └── ui.ts           # UI handling
 │
 ├── assets/             # Pixel art assets
 │   ├── sprites/        # Character and game piece sprites
 │   └── tiles/          # Background and environment tiles
-│
-├── go/                 # Go source files
-│   ├── main.go         # Go server entry point
-│   └── gameLogic.go    # Game logic (turns, player, state)
 │
 └── index.html          # Main HTML file
 ```
