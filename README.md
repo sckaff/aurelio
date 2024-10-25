@@ -1,8 +1,6 @@
-# Aurelio - Web-Based Turn-Based Pixel Art Game
+# aurelio
 
-Aurelio is a **single-player, web-based turn-based game** built with **TypeScript** and **Go**. It features pixel art visuals and a simple but engaging gameplay experience.
-
-This project is designed to be part of my portfolio, showcasing my skills in full-stack development, with the **TypeScript** frontend and **Go** backend working together seamlessly.
+Aurelio is a **single-player, web-based turn-based game** built with **TypeScript**. It features pixel art visuals and a simple but engaging gameplay experience.
 
 ## Features
 
@@ -11,67 +9,7 @@ This project is designed to be part of my portfolio, showcasing my skills in ful
 - **Single-Player**: Designed for solo play, focusing on strategic decision-making.
 - **Web-Based**: The game can be played directly from a browser.
 
-## Technologies Used
-
-- **Frontend**: TypeScript, HTML, CSS (using standard web technologies for the UI)
-- **Backend**: Go (to handle game logic, turns, and player interactions)
-- **Pixel Art**: Custom pixel art assets (can include a game board, characters, etc.)
-- **Build Tools**: TypeScript Compiler (`tsc`), Go (used to serve the web page and handle game state)
-
-## Setup
-
-### Prerequisites
-
-- **Go** (v1.x.x) - The Go runtime and tools are required to handle the backend of the game.
-- **Node.js** & **npm** (optional, for frontend build)
-- **TypeScript** installed (to compile the game logic)
-
-### Installation
-
-#### 1. Clone the repository
-
-```bash
-git clone https://github.com/yourusername/aurelio.git
-cd aurelio
-```
-
-#### 2. Install the TypeScript dependencies
-
-If you're using npm, navigate to the frontend folder and run:
-
-```bash
-npm install
-```
-
-Alternatively, you can run:
-
-```bash
-tsc
-```
-
-#### 3. Install Go dependencies (if any)
-
-```bash
-go mod tidy
-```
-
-### Running the Game Locally
-
-#### 1. Compile the TypeScript files into JavaScript
-
-```bash
-tsc
-```
-
-#### 2. Run the Go server
-
-```bash
-go run .
-```
-
-#### 3. Open your browser and navigate to ```http://localhost:8080``` (or the appropriate port as defined in your Go code)
-
-## Project Structure
+## Project Structure [must update]
 
 ```text
 aurelio/
